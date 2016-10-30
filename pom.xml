@@ -7,7 +7,7 @@
   <version>4.10.4</version>
   <packaging>jar</packaging>
 
-  <name>ik-analyzer-solr5</name>
+  <name>ik-analyzer</name>
   <url>http://code.google.com/p/ik-analyzer/</url>
 
   <properties>
@@ -44,10 +44,21 @@
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-analyzers-common</artifactId>
       <version>${lucene.version}</version>
-    </dependency>                     
+    </dependency>
+    <dependency>
+      <groupId>org.apache.solr</groupId>
+      <artifactId>solr-core</artifactId>
+      <version>4.10.4</version>
+    </dependency>                 
   </dependencies>
 
   <build>
+    <resources>
+     <resource>
+       <directory>src/main/yueliang</directory>
+       <!-- <directory>src/main/resources</directory> -->
+     </resource>
+   </resources>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
