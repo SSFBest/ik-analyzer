@@ -3,7 +3,7 @@
    MAVEN_HOME:E:\tool\apache-maven-3.6.3-bin\apache-maven-3.6.3
 2,PATH:;E:\tool\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;
 3,编译：mvn package
-4,copy **.jar to server/ylmain下面
+4,copy ik-analyzer-4.10.4.jar to server/ylmain下面
 # 关于词库 #
 1,lib/cron
 命令：python ci.py solr
