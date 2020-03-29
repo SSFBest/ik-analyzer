@@ -7,4 +7,6 @@
 # 关于词库 #
 1,lib/cron
 命令：python ci.py solr
-cat.dic和brand.dic要在服务器上执行，然后copy到main/yuelinag
+cat.dic,brand.dic,shops.dic,goods.dic要在服务器上执行，然后copy到main/yuelinag
+然后在本地运行python ci.py solr整理词。
+然后再到IK下面mvn package
